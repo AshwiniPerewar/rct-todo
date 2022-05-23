@@ -1,3 +1,25 @@
 .task {
   /* Sample  */
+  display: flex;
+  font-size: 24px;
+}
+
+.task>button{
+  width: 30px;
+  height: 30px;
+  color: white;
+  background-color: blueviolet;
+  border-color: white;
+}
+
+.checkbox
+{
+  margin-left: -80px;
+  display: flex;
+  font-size: 24px;
+ 
+}
+.plus
+{
+  margin-left: 75%;
 }

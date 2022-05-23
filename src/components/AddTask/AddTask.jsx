@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import styles from "./addTask.module.css";
 import Tasks from "../Tasks/Tasks";
-const AddTask = () => {
+const AddTask = ({AddTodo}) => {
   // NOTE: do not delete `data-cy` key value pair
-  const[todo,setTodo]=useState([]);
   const[value,setValue]=useState("");
   return (
     <div className={styles.todoForm}>
@@ -12,15 +11,11 @@ const AddTask = () => {
       value={value}
        onChange={(e)=>{setValue(e.target.value)}}/>
       <button data-cy="add-task-button" onClick={()=>{
-        setTodo([...todo,{id:Date.now(),value:value}])
+        AddTodo(value)
         setValue("");
         }}>+</button>
         <div>
-          {todo.map((todo)=>
-          (
-            <Tasks todo={todo} id={todo.id} />
-          
-          ))}
+         
         </div>
     </div>
   );

@@ -1,3 +1,25 @@
-.addTask {
+.todoForm {
   /* Sample */
+  width: 400px;
+  display: flex;
+}
+
+.todoForm>input
+{
+  width: 100%;
+  margin-top: 30px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.todoForm>button
+{
+  height: 30px;
+  margin-top: 30px;
+  color: blueviolet;
+  font-size: 30px;
+  border: none;
+  background-color: white;
+ 
 }
